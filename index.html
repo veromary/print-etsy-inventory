@@ -18,7 +18,14 @@ if (window.File && window.FileReader && window.FileList && window.Blob) {
 </script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <script src="js/jquery.csv.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Merienda+One|Lato:400,700' rel='stylesheet' type='text/css'>
 <style>
+h1, h2 {
+   font-family: 'Merienda One', cursive;
+}
+body {
+   font-family: 'Lato', sans-serif;
+}
 .item {
     border: 1px #000000 solid;
     width: 290px;
@@ -41,10 +48,12 @@ img {
 </head>
 <body>
 
-<h2>Print Etsy Inventory</h2>
+<a href="https://github.com/veromary/print-etsy-inventory/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+
+<h1>Print Etsy Inventory</h1>
 
   <div id="inputs" class="clearfix">
-To download your Active Etsy Listings, Find your Shop Menu > "Shop Settings" > "Options" > "Download Data" and click the "Download CSV" button for your Currently for Sale Listings.  For me it saves as EtsyListingsDownload.csv.  Now select that file here:
+To download your Active Etsy Listings, got to your <strong>Shop Menu > "Shop Settings" > "Options" > "Download Data"</strong> and click the <strong>"Download CSV"</strong> button for your Currently for Sale Listings.  For me it saves as <tt>EtsyListingsDownload.csv</tt>.  Now select that file here:
     <input type="file" id="files" name="files[]" multiple />
 Then use your browser to Print (usually Ctrl-P)
   </div>
@@ -122,5 +131,8 @@ Then use your browser to Print (usually Ctrl-P)
      }
   </script>
 
+<footer>
+Print Etsy Inventory is a project of the Brandt Lab: <a href="http://www.brandt.id.au">www.brandt.id.au</a>
+</footer>
     </body>
 </html>
